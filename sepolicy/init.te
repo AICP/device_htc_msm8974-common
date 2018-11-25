@@ -1,4 +1,2 @@
 allow init { domain -lmkd -crash_dump }:process noatsecure;
 allow init proc:file {write open setattr};
-
-set_prop(init, wcnss_prop)
