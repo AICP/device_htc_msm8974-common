@@ -8,3 +8,4 @@ allow thermanager { sysfs_battery_supply sysfs_leds sysfs_thermal sysfs_usb_supp
 allow thermanager { sysfs_battery_supply sysfs_kgsl sysfs_leds sysfs_thermal sysfs_usb_supply }:file rw_file_perms;
 allow thermanager sysfs_devices_system_cpu:file write;
 allow thermanager { sysfs_leds sysfs_thermal }:lnk_file rw_file_perms;
+allow thermanager sysfs_graphics:dir r_dir_perms;
