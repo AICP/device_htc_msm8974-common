@@ -43,8 +43,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     dev.pm.dyn_samplingrate=1 \
     persist.hwc.mdpcomp.enable=true \
-    ro.opengles.version=196608 \
-    ro.sf.lcd_density=420
+    ro.opengles.version=196608
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
