@@ -13,6 +13,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.tunnel.encode=true \
     vendor.voice.path.for.pcm.voip=false
 
+# Audio-playback fix
+PRODUCT_PROPERTY_OVERRIDES += \
+    pm.sleep_mode=1 \
+    ro.ril.disable.power.collapse=1
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.dun=true \
