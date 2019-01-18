@@ -307,6 +307,10 @@ service wcnss-service /vendor/bin/wcnss_service
 on property:vendor.bluetooth.hciattach=true
     start hciattach
 
+on property:sys.boot_completed=1
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.qcom
+
 on property:vendor.bluetooth.hciattach=false
     setprop vendor.bluetooth.status off
 
