@@ -44,6 +44,7 @@ on init
 
     # tune vm-params
     write /proc/sys/vm/min_free_kbytes 6140
+    write /proc/sys/vm/extra_free_kbytes 34300
 
 on fs
     mount_all /vendor/etc/fstab.qcom
