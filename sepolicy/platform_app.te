@@ -1,0 +1,1 @@
+allow platform_app {alarm_boot_prop alarm_handled_prop alarm_instance_prop}:file r_file_perms;
