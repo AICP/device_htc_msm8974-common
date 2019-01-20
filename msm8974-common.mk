@@ -139,9 +139,8 @@ PRODUCT_PACKAGES += \
 
 # FM Radio
 PRODUCT_PACKAGES += \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
+    FMRadio \
+    libfmjni
 
 # HTC logging symbols
 PRODUCT_PACKAGES += \
