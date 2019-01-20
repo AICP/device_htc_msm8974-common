@@ -1,1 +1,2 @@
+allow system_server cache_recovery_last_install:file unlink;
 allow system_server sysfs_sensors:file write;
