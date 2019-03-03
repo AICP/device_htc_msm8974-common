@@ -2,17 +2,17 @@
   {
     "repository": "LineageOS/android_kernel_htc_msm8974",
     "target_path": "kernel/htc/msm8974",
-    "branch:" "lineage-16.0"
+    "branch": "lineage-16.0"
   },
   {
     "repository": "LineageOS/android_hardware_sony_thermanager",
     "target_path": "hardware/sony/thermanager",
-    "branch:" "lineage-16.0"
+    "branch": "lineage-16.0"
   },
   {
     "repository": "AICP/packages_apps_FlipFlap",
     "target_path": "packages/apps/FlipFlap",
-    "branch:" "p9.0"
+    "branch": "p9.0"
   },
   {
     "repository": "AICP/proprietary_vendor_htc",
@@ -22,12 +22,12 @@
   {
     "repository": "LineageOS/android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings",
-    "branch" "lineage-16.0"
+    "branch": "lineage-16.0"
   },
   {
     "repository": "LineageOS/android_external_connectivity",
     "target_path": "external/connectivity",
-    "branch" "lineage-16.0"
+    "branch": "lineage-16.0"
   },
   {
     "repository": "LineageOS/android_external_ant-wireless_ant_native",
