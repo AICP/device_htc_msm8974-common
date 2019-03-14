@@ -262,4 +262,7 @@
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
     <integer name="config_deviceHardwareWakeKeys">64</integer>
+
+    <!-- Audio panel view placement. Is left side enabled -->
+    <bool name="config_audioPanelOnLeftSide">true</bool>
 </resources>
