@@ -320,7 +320,7 @@ on property:vendor.bluetooth.hciattach=false
 on property:init.svc.bootanim=stopped
     # Overwrite ActivityManager's low memory killer settings
     write /sys/module/lowmemorykiller/parameters/adj "2,4,7,8,9,12"
-    write /sys/module/lowmemorykiller/parameters/minfree "15360,18432,21504,23040,24576,30720"
+    write /sys/module/lowmemorykiller/parameters/minfree "39110,58665,117330,195550,273770,293325"
     write /proc/sys/vm/extra_free_kbytes 34300
 
 on property:ro.data.large_tcp_window_size=true
