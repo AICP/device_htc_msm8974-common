@@ -11,7 +11,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.audio.sdk.fluencetype=fluence \
     vendor.audio_hal.period_size=192 \
     vendor.audio.tunnel.encode=true \
-    vendor.voice.path.for.pcm.voip=false
+    vendor.voice.path.for.pcm.voip=false \
+    persist.vendor.audio.spkr.cal.duration=10 \
+    persist.vendor.audio.speaker.prot.enable=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
