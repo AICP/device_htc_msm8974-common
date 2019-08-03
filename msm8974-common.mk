@@ -188,6 +188,11 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
 
+# JamesDSPManager
+PRODUCT_PACKAGES += \
+    JamesDSPManager \
+    libjamesDSPImpulseToolbox
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/keypad_8974.kl:system/vendor/usr/keylayout/keypad_8974.kl \
