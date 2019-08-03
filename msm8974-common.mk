@@ -105,6 +105,11 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     tinymix
 
+# JamesDSPManager
+PRODUCT_PACKAGES += \
+    JamesDSPManager \
+    libjamesDSPImpulseToolbox
+
 # Art
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-swap=false
