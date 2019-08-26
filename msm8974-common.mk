@@ -197,8 +197,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/keypad_8974.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/keypad_8974.kl \
     $(LOCAL_PATH)/keylayout/projector-Keypad.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/projector-Keypad.kl \
-    $(LOCAL_PATH)/keylayout/synaptics-rmi-touchscreen.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics-rmi-touchscreen.kl \
-    $(LOCAL_PATH)/keylayout/AK8789_HALL_SENSOR.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/AK8789_HALL_SENSOR.kl
+    $(LOCAL_PATH)/keylayout/synaptics-rmi-touchscreen.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics-rmi-touchscreen.kl
 
 # Keymaster
 PRODUCT_PACKAGES += \
