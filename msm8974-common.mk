@@ -273,6 +273,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl
 
+# codeaurora telephony-ext
+PRODUCT_PACKAGES += \
+    telephony-ext
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # Thermal
 PRODUCT_PACKAGES += \
     thermanager
