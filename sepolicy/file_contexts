@@ -32,6 +32,9 @@
 # Recovery
 /cache/recovery/last_install                                                         u:object_r:cache_recovery_last_install:s0
 
+# Rootfs files
+/tombstones                                                                          u:object_r:rootfs:s0
+
 # Sysfs nodes
 /sys/android_camera_awb_cal(/.*)?                                                    u:object_r:sysfs_camera_awb_cal:s0
 /sys/android_camera([0-9]+)?/sensor                                                  u:object_r:sysfs_camera_sensor:s0
