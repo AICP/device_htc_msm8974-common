@@ -1,4 +1,7 @@
+allow mediaserver cameraserver_service:service_manager add;
+allow mediaserver hidl_base_hwservice:hwservice_manager add;
 allow mediaserver proc_version:file r_file_perms;
+allow mediaserver sensor_privacy_service:service_manager find;
 allow mediaserver sysfs_camera_sensor:file r_file_perms;
 allow mediaserver vendor_file:file execmod;
 r_dir_file(mediaserver, sysfs_battery_supply)
