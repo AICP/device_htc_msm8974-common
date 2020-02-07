@@ -1,0 +1,2 @@
+android.frameworks.cameraservice.service::ICameraService        u:object_r:fwk_camera_hwservice:s0
+
