@@ -248,7 +248,9 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service-qti
+    android.hardware.power@1.0-impl \
+    android.hardware.power@1.0-service \
+    power.msm8974
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
