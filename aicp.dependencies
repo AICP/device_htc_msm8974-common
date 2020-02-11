@@ -1,8 +1,7 @@
 [
   {
-    "repository": "LineageOS/android_kernel_htc_msm8974",
+    "repository": "AICP/kernel_htc_msm8974",
     "target_path": "kernel/htc/msm8974",
-    "branch": "lineage-16.0"
   },
   {
     "repository": "LineageOS/android_hardware_sony_thermanager",
