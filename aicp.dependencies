@@ -6,7 +6,7 @@
   {
     "repository": "LineageOS/android_hardware_sony_thermanager",
     "target_path": "hardware/sony/thermanager",
-    "branch": "lineage-16.0"
+    "branch": "lineage-17.1"
   },
   {
     "repository": "AICP/packages_apps_FlipFlap",
