@@ -108,7 +108,7 @@ on enable-low-power
     write /sys/module/cpu_boost/parameters/input_boost_freq 1497600
     write /sys/module/cpu_boost/parameters/input_boost_ms 40
 
-    write /dev/cpuctl/notify_on_migrate 1
+    write /dev/cpuctl/cpu.notify_on_migrate 1
 
 on boot
     trigger enable-low-power
