@@ -38,11 +38,11 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# DeviceParts
+PRODUCT_PACKAGES += DeviceParts
+
 # FlipFlap
 PRODUCT_PACKAGES += FlipFlap
-
-# Gesture Handler
-PRODUCT_PACKAGES += GestureHandler
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-gesturehandler.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-gesturehandler.xml
