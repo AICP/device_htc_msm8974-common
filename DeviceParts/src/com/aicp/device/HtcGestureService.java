@@ -216,6 +216,7 @@ public class HtcGestureService extends Service {
     }
 
     private void handleWakeDisplay() {
+        doHapticFeedback();
         wakeDisplay();
     }
 
