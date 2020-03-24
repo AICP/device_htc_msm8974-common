@@ -1,5 +1,6 @@
 /*
 * Copyright (C) 2016 The OmniROM Project
+* Copyright (C) 2020 The Android Ice Cold Project
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -40,6 +41,8 @@ public class VibratorStrengthPreference extends Preference implements
     private int mMaxValue;
     private Vibrator mVibrator;
 
+    private static final boolean DEBUG = false;
+    private static final String TAG = "VibratorStrengthPreference";
     private static final String FILE_LEVEL = "/sys/devices/virtual/timed_output/vibrator/vtg_level";
     private static final long testVibrationPattern[] = {0,250};
     public static final String SETTINGS_KEY = DeviceSettings.KEY_SETTINGS_PREFIX + DeviceSettings.KEY_VIBSTRENGTH;
@@ -90,9 +93,11 @@ public class VibratorStrengthPreference extends Preference implements
             return;
         }
         String storedValue = Settings.System.getString(context.getContentResolver(), SETTINGS_KEY);
+	if (DEBUG) Log.d(TAG,"restore value:"+storedValue);
         if (storedValue == null) {
             storedValue = DEFAULT_VALUE;
         }
+	if (DEBUG) Log.d(TAG,"restore file:"+FILE_LEVEL);
         Utils.writeValue(FILE_LEVEL, storedValue);
     }
 
