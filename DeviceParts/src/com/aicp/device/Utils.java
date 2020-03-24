@@ -17,6 +17,7 @@
 */
 package com.aicp.device;
 
+import android.util.Log;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -26,6 +27,8 @@ import java.io.FileReader;
 
 public class Utils {
 
+    private static final boolean DEBUG = false;
+    private static final String TAG = "Utils";
     /**
      * Write a string value to the specified file.
      * @param filename      The filename
@@ -35,6 +38,7 @@ public class Utils {
         if (filename == null) {
             return;
         }
+        if (DEBUG) Log.d(TAG, "writeValue filename/value:"+filename+"/"+value);
         try {
             FileOutputStream fos = new FileOutputStream(new File(filename));
             fos.write(value.getBytes());
@@ -99,6 +103,7 @@ public class Utils {
         if(fileValue!=null){
             return fileValue;
         }
+        if (DEBUG) Log.d(TAG,"getFileValue file/value:"+filename+"/"+defValue);
         return defValue;
     }
 }
