@@ -75,6 +75,29 @@ public class Utils {
     }
 
     /**
+     * Write a string value to the specified file.
+     * @param filename      The filename
+     * @param value         The value
+     */
+    public static void writeValueDual(String filename, String value) {
+        if (filename == null) {
+            return;
+        }
+	String Dualvalue = value+" "+value;
+        if (DEBUG) Log.d(TAG, "writeValueDual: filename / value:"+filename+" / "+Dualvalue);
+        try {
+            FileOutputStream fos = new FileOutputStream(new File(filename));
+            fos.write(Dualvalue.getBytes());
+            fos.flush();
+            fos.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
      * Check if the specified file exists.
      * @param filename      The filename
      * @return              Whether the file exists or not
@@ -113,6 +136,26 @@ public class Utils {
         return line;
     }
 
+    /*
+     * we need this little helper method, because api offers us values for left and right.
+     * We want to handle both values equal, so only read left value.
+     * Format in sysfs file is:
+     * 1 1
+     * BUT... for some reasons, when writing in the file a -1, the value in the file is 255,
+     * -2 is 254, so we have here to do some maths...
+    */
+    public static String declutterDualValue(String HtcOutput) {
+        String[] seperateDual = HtcOutput.split(" ", 2);
+        int declutteredValue = Integer.parseUnsignedInt(seperateDual[0]);
+        if (declutteredValue > 20) {
+            // The chosen variablename is like the thing it does ;-) ...
+            int declutteredandConvertedValue = declutteredValue - 256;
+            declutteredValue = declutteredandConvertedValue;
+        }
+        Log.i(TAG,"deplutterDualvalue: decluttered value: "+declutteredValue);
+        return String.valueOf(declutteredValue);
+    }
+
     public static boolean getFileValueAsBoolean(String filename, boolean defValue) {
         String fileValue = readLine(filename);
         if(fileValue!=null){
@@ -125,7 +168,7 @@ public class Utils {
         String fileValue = readLine(filename);
         if (DEBUG) Log.d(TAG,"getFileValue file / value:"+filename+" / "+fileValue);
         if(fileValue!=null){
-	    return fileValue;
+            return fileValue;
         }
         if (DEBUG) Log.e(TAG,"getFileValue file / value:"+filename+" / "+defValue);
         return defValue;
@@ -137,6 +180,16 @@ public class Utils {
             return fileValue;
         }
         if (DEBUG) Log.d(TAG,"getFileValue file / value:"+filename+" / "+defValue);
+        return defValue;
+    }
+
+    public static String getFileValueDual(String filename, String defValue) {
+        String fileValue = readLine(filename);
+        if (DEBUG) Log.d(TAG,"getFileValueDual: file / value:"+filename+" / "+fileValue);
+        if(fileValue!=null){
+            return declutterDualValue(fileValue);
+        }
+        if (DEBUG) Log.e(TAG,"getFileValueDual: file / default value:"+filename+" / "+defValue);
         return defValue;
     }
 }

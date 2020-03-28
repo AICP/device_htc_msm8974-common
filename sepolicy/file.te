@@ -10,6 +10,9 @@ type sysfs_fastcharger, sysfs_type, fs_type;
 # debugfs
 type debugfs_ion, fs_type, debugfs_type;
 
+# headphone gain
+type sysfs_headphone_gain, sysfs_type, fs_type;
+
 # procfs
 type proc_wcnss_service, fs_type;
 
