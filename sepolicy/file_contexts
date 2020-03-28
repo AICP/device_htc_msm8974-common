@@ -1,3 +1,6 @@
+# Backlight dimmer
+/sys/devices/mdp.0/qcom,mdss_fb_primary.174/leds/lcd-backlight/max_brightness   u:object_r:sysfs_backlight_dimmer:s0
+
 # Binaries
 /system/vendor/bin/cir_fw_update                                                     u:object_r:cir_fw_update_exec:s0
 /system/vendor/bin/thermanager                                                       u:object_r:thermanager_exec:s0
