@@ -2,6 +2,9 @@
 type cache_recovery_last_install ,fs_type;
 
 # charger
+type sysfs_backlight_dimmer, sysfs_type, fs_type;
+
+# charger
 type sysfs_fastcharger, sysfs_type, fs_type;
 
 # debugfs
