@@ -1,6 +1,9 @@
 # cache
 type cache_recovery_last_install ,fs_type;
 
+# charger
+type sysfs_fastcharger, sysfs_type, fs_type;
+
 # debugfs
 type debugfs_ion, fs_type, debugfs_type;
 
