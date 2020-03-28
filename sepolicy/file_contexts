@@ -1,3 +1,6 @@
+# Backlight dimmer
+/sys/backlight_dimmer/backlight_min   u:object_r:sysfs_backlight_dimmer:s0
+
 # Binaries
 /system/vendor/bin/cir_fw_update                                                     u:object_r:cir_fw_update_exec:s0
 /system/vendor/bin/thermanager                                                       u:object_r:thermanager_exec:s0

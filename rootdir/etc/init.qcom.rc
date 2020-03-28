@@ -233,6 +233,10 @@ on boot
     # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
+    # backlight dimmer
+    chown system system /sys/backlight_dimmer/backlight_min
+    chmod 0666 /sys/backlight_dimmer/backlight_min
+
 ## Service start here
 service adsprpcd /vendor/bin/adsprpcd
     class main

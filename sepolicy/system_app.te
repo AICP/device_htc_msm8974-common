@@ -2,6 +2,7 @@ allow system_app apex_service:service_manager find;
 allow system_app cir_device:chr_file rw_file_perms;
 allow system_app proc_pagetypeinfo:file r_file_perms;
 allow system_app system_suspend_control_service:service_manager find;
+allow system_app sysfs_backlight_dimmer:file rw_file_perms;
 allow system_app sysfs_fastcharger:file rw_file_perms;
 allow system_app sysfs_sensors:file rw_file_perms;
 allow system_app sysfs_sensors:dir search;
