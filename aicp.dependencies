@@ -20,7 +20,7 @@
     "branch":      "q10.0"
   },
   {
-    "repository":  "Claymore1297/packages_resources_deviceparts",
+    "repository":  "AICP/packages_resources_deviceparts",
     "target_path": "packages/resources/deviceparts",
     "branch":      "q10.0"
   }
