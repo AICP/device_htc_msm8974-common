@@ -320,4 +320,8 @@
     <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone0/temp</string>
     <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
     <integer name="config_sysBatteryTempMultiplier">10</integer>
+
+    <!-- Force Low qauality on scrren record for legacy devices -->
+    <bool name="config_screenRecordforceLowQuality">true</bool>
+
 </resources>
