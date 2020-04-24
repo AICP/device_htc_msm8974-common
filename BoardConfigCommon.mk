@@ -139,9 +139,6 @@ TARGET_LMKD_STATS_LOG := true
 TARGET_RPM_SYSTEM_STAT := /d/rpm_stats
 TARGET_USES_INTERACTION_BOOST := true
 
-# SDClang
-TARGET_USE_SDCLANG := true
-
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
