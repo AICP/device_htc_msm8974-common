@@ -107,7 +107,7 @@ public class HtcGestureService extends Service {
         super.onCreate();
 
         mContext = this;
-        mGestureSensor = GestureMotionSensor.getInstance(mContext);
+        mGestureSensor = GestureMotionSensor.Companion.getInstance(mContext);
         mGestureSensor.registerListener(mListener);
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(mContext);
         loadPreferences(sharedPrefs);
