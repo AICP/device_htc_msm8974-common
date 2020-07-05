@@ -39,7 +39,7 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # DeviceParts
-PRODUCT_PACKAGES += DeviceParts
+PRODUCT_PACKAGES += DeviceParts_m8
 
 # FlipFlap
 PRODUCT_PACKAGES += FlipFlap
