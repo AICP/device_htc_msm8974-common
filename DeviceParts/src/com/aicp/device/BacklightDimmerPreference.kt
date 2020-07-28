@@ -81,8 +81,12 @@ class BacklightDimmerPreference(context: Context?, attrs: AttributeSet?) : Prefe
             if (!isSupported) {
                 return
             }
-            var storedValue: String = Settings.System.getString(context.getContentResolver(), SETTINGS_KEY)
-            if (DEBUG) Log.d(TAG, "restore file:$FILE_LEVEL value:$storedValue")
+            var storedValue: String = Settings.System.getString(context.getContentResolver(), SETTINGS_KEY)?: DEFAULT_VALUE
+
+            if (DEBUG) {
+                Log.d(TAG, "restore value:$storedValue")
+                Log.d(TAG, "restore file:$FILE_LEVEL")
+            }
             Utils.writeValue(FILE_LEVEL, storedValue)
         }
     }
