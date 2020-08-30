@@ -96,7 +96,7 @@ class HtcGestureService : Service() {
 
     }
 
-    override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
+    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         if (DEBUG) Log.d(
             TAG,
             "Starting service"
