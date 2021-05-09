@@ -15,9 +15,5 @@
   {
     "repository": "AICP/proprietary_vendor_htc",
     "target_path": "vendor/htc"
-  },
-  {
-    "repository":  "AICP/packages_resources_deviceparts",
-    "target_path": "packages/resources/deviceparts"
   }
 ]
