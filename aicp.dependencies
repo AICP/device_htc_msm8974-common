@@ -11,9 +11,5 @@
   {
     "repository": "AICP/packages_apps_FlipFlap",
     "target_path": "packages/apps/FlipFlap"
-  },
-  {
-    "repository": "AICP/proprietary_vendor_htc",
-    "target_path": "vendor/htc"
   }
 ]
