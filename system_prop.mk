@@ -25,6 +25,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bt.bdaddr_path=/sys/module/htc_bdaddress/parameters/bdaddress \
     ro.qualcomm.bt.hci_transport=smd
 
+# BPF
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.kernel.ebpf.supported=false
+
 # Dalvik heap
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=16m \
