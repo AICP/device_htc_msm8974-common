@@ -116,6 +116,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.jbims=1 \
     DEVICE_PROVISIONED=1
 
+# System
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false
+
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
