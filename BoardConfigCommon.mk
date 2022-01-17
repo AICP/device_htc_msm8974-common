@@ -137,6 +137,7 @@ BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 TARGET_LD_SHIM_LIBS := \
     /system/lib/liblog.so|liblog_htc.so \
     /system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_camera.so \
+    /system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_sensor.so \
     /system/vendor/lib/libril_spr-qc-qmi-1.so|libshim_ril.so \
     /system/vendor/lib/libril_vzw-qc-qmi-1.so|libshim_ril.so \
     /system/vendor/lib/libril-qc-qmi-1.so|libshim_ril.so
