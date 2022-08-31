@@ -1,0 +1,2 @@
+allow installd installd:capability { sys_ptrace };
+
