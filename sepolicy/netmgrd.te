@@ -1,0 +1,2 @@
+allow netmgrd default_prop:file r_file_perms;
+
