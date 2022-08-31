@@ -9,6 +9,11 @@
     "branch": "lineage-18.1"
   },
   {
+    "repository": "LineageOS/android_external_ant-wireless_antradio-library",
+    "target_path": "external/ant-wireless/antradio-library",
+    "branch": "lineage-19.0"
+  },
+  {
     "repository": "AICP/packages_apps_FlipFlap",
     "target_path": "packages/apps/FlipFlap"
   }
