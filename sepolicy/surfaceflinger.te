@@ -1,0 +1,6 @@
+allow surfaceflinger platform_app:process {getattr};
+allow surfaceflinger bootanim:dir r_dir_perms;
+allow surfaceflinger bootanim:file r_file_perms;
+allow surfaceflinger system_app:process {getattr};
+allow surfaceflinger system_server:process {getattr};
+

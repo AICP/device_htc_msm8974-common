@@ -1,4 +1,5 @@
 r_dir_file(vold, firmware_file)
 
+allow vold system_server:process {getattr};
 # For setting read_ahead_kb
 allow vold sysfs_mmc_host:file w_file_perms;
