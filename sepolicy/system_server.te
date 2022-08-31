@@ -1,7 +1,17 @@
+allow system_server audioserver:process {getattr};
+allow system_server bluetooth:process {getattr};
 allow system_server cache_recovery_last_install:file unlink;
 allow system_server dalvikcache_data_file:file {write execute};
+allow system_server mediaextractor:process {getattr};
+allow system_server mediaprovider:process {getattr};
+allow system_server mediaserver:process {getattr};
+allow system_server network_stack:process {getattr};
+allow system_server nfc:process {getattr};
+allow system_server platform_app:process {getattr};
 allow system_server proc_last_kmsg:file r_file_perms;
+allow system_server surfaceflinger:process {getattr};
 allow system_server sysfs_sensors:file write;
+allow system_server system_app:process {getattr};
 
 get_prop(system_server, exported_camera_prop);
 get_prop(system_server, userspace_reboot_config_prop);
