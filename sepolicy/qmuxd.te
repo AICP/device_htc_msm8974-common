@@ -1,2 +1,3 @@
 # The daemon tries to access /sys/devices/fe200000.qcom,lpass/subsys0/name
+allow qmuxd default_prop:file r_file_perms;
 allow qmuxd sysfs:file r_file_perms;
