@@ -45,7 +45,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.logs=0 \
     debug.sf.disable_backpressure=1 \
     debug.sf.hw=1 \
-    debug.sf.latch_unsignaled=1 \
     debug.renderengine.backend=threaded \
     dev.pm.dyn_samplingrate=1 \
     persist.hwc.mdpcomp.enable=true \
