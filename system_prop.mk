@@ -48,7 +48,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.renderengine.backend=threaded \
     dev.pm.dyn_samplingrate=1 \
     persist.hwc.mdpcomp.enable=true \
-    ro.opengles.version=196608
+    ro.opengles.version=196608 \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
